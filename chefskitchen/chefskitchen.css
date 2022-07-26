@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@font-face {
+    font-family: bungee-inline;
+    src: url(./font-family/BungeeInline-Regular.ttf);
+}
+
+@font-face {
+    font-family: regular;
+    src: url(./font-family/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: bungee-shade;
+    src: url(./font-family/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font-family/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #27211a;
+    color: #b09165;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bungee-inline {
+    font-family: bungee-inline;
+}
+
+.regular {
+    font-family: regular;
+}
+
+.bungee-shade {
+    font-family: bungee-shade;
+}
+
+.Montserrat {
+    font-family: Montserrat;
+}
+
+div {
+    /* border: 1px solid; */
+}
+
+/* heading-logo  */
+
+.slider-1 {
+    background-image: url(./images/slider-1\ bg\ image.png);
+    padding-top: 30px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.row {
+    flex-wrap: wrap;
+}
+
+/* Contact-details  */
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-item {
+    align-items: center;
+}
+
+.margin-left {
+    margin: 0 10px 0 0;
+    margin-left: auto;
+}
+
+.Contact-details {
+    text-align: left;
+    font-family: regular;
+    font-size: 23px;
+}
+
+.contact-no {
+    font-size: 28px;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    color: #ffffff;
+    padding: 8px;
+}
+
+div {
+    /* border: 1px solid white; */
+}
+
+/* main-menu */
+
+a {
+    text-decoration: none;
+    color: #b09165;
+    font-size: 25px;
+}
+
+a:hover {
+    border: 1px solid #b09165;
+    background: #b09165;
+    color: #dbc8ad;
+}
+
+/* slider-1  */
+
+.slider-1-wrapper {
+    padding-top: 150px;
+}
+
+.slider-1-title {
+
+    font-size: 93px;
+    line-height: 85px;
+    font-weight: 400;
+}
+
+.col span {
+    font-size: 82px;
+
+}
+
+/* title-text */
+.flex {
+    display: flex;
+}
+
+/* drink-offer */
+
+.drink-offer {
+    font-size: 29px;
+    line-height: 30PX;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+/* $-icon  */
+
+.icon {
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 63px;
+    padding-left: 20px;
+}
+
+.title-icons {
+    padding-bottom: 20px;
+    width: 80%;
+}
+
+hr {
+    width: 80%;
+}
+
+/* Price */
+
+.price {
+    font-size: 142px;
+    line-height: 60px;
+    font-weight: 400;
+    padding-top: 37px;
+    padding-left: 20px;
+}
+
+/* .pettern & hot-dog*/
+
+.hot-dog {
+    padding-bottom: 100px;
+}
+
+/* slider-2 */
+
+.slider-2-wrapper {
+    padding: 90px 0px;
+}
+
+.slider-2-text {
+    text-align: center;
+}
+
+.text-1 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.text-2 {
+    font-size: 50px;
+    line-height: 38px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.text-3 {
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* slider-2-img */
+.icon-1 img {
+    width: 300px;
+    height: 100%;
+    padding: 40px 0px 40px 20px;
+    margin-left: 40px;
+
+}
+
+.img-2 {
+    transform: rotate(80deg);
+    margin: 0 auto;
+}
+
+.sub-title-1 {
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+.sub-title-2 {
+    width: 367px;
+    height: 51px;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.b {
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #bf2222;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* slider-3 */
+
+.grid {
+    padding: 15px;
+}
+
+.slider-3-text {
+    text-align: center;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 900;
+    text-align: justify;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    line-height: 10px;
+}
+
+.pr-2 {
+    position: relative;
+}
+
+.pa-2 {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1;
+}
+
+/* slider-4 */
+.slider-4-text {
+    text-align: center;
+}
+
+.col-20 {
+    width: 5%;
+    padding-top: 25%;
+}
+
+.col-60 {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/* slider-5 */
+
+.slider-5-text {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.c-1 {
+    font-size: 29px;
+    letter-spacing: 2px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.c-2 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 46px;
+    font-weight: 400;
+    margin-bottom: 50px
+}
+
+/* table  */
+
+.table {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+input {
+    width: 300px;
+    background-color: #27211a;
+    border: 1px solid #b09165;
+    color: #b09165;
+    margin: 10px 0px 10px 10px;
+    border-radius: 5px;
+    padding: 20px 60px 20px 10px;
+}
+
+::placeholder {
+    color: #b09165;
+}
+
+.btn-1 {
+    background: #b09165;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 20px 60px 20px 10px;
+    margin: 10px 0px 10px 10px;
+    width: 300px;
+    border: #b09165;
+    border-radius: 5px;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-30 {
+    width: 30%;
+    position: relative;
+    bottom: 180px;
+}
+
+/* footer */
+
+.footer-wrap {
+    background-image: url(./images/last-bg.png);
+    margin: 0 0 90px 0;
+    color: #ffffff;
+}
+
+.logo-1 {
+    width: 220px;
+    padding: 100px 0px 0px 50px;
+}
+
+.footer-text {
+    padding: 100px 0px 100px 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.right {
+    padding: 0px 0px 20px 30px;
+    font-weight: 700;
+}
+
+.footbar a {
+    color: #ffffff;
+}
+
+.footbar i {
+    margin: 10px;
+}
+
+.footer-icon i {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #27211a;
+}
+
+.footer-icon {
+    text-align: right;
+    padding: 200px 20px 20px 0px;
+
+}
