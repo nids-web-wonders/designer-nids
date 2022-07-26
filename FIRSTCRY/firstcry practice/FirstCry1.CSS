@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    border: 1px solid;
+    display: flex;
+    padding: 0px 50px;
+}
+
+.flogo {
+    padding: 9px 0px;
+}
+
+.searchbox {
+    height: 35px;
+    margin: 20px;
+    line-height: 60px;
+    border: 1px solid orange;
+    display: flex;
+    border-radius: 5px;
+}
+
+.searchbox>img {
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.search {
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding: 0px 5px;
+    padding: 0px 10px;
+}
+
+.search:focus{
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.menu {
+    line-height: 85px;
+    font-family: sans-serif;
+    font-size: 11px;
+    /* padding-left: 5px; */
+}
+
+.tr {
+    display: flex;
+}
+
+.td{
+    padding:0px 3px;
+}
+
+.menucontainer{
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 10px;
+    
+}
+
+.tr1{
+    padding: 0px 50px;
+    display: flex;
+    background-color:#FFD91C;
+    
+}
+a{
+    text-decoration: none;
+    /* vertical-align: middle; */
+    color: black;
+    
+    
+}
+.td1{
+    padding: 0px 5px;
+    font-size: 13px;
+    margin-top: 15px;    
+}
+.td2{
+    padding: 0px 5px;
+}
+.main>img{
+    vertical-align: middle;
+    width: 100%;
+   
+}
+.main{
+    padding: 0px 20px;
+}
+
+.td3 img {
+    height: 400px;
+}
+
+.td4 {
+    font-family: sans-serif;
+    color: rgb(46, 41, 41);
+    margin: 10px 500px;
+}
+
+.td4 {
+    background-color: #EEEEEE;
+}
+
+.td5 {
+    margin-left: 50px;
+    background-color: #EEEEEE;
+}
+
+.td5 img {
+    margin: 5px;
+    border-radius: 5px;
+}
+.td5 a:hover{
+  box-shadow: 1px 0px 9px gray;
+}
+
+.td6 {
+    margin: 20px 0px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color:#EEEEEE;
+}
+
+.td6 a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color:white;
+}
+
+.td6 a:hover {
+    box-shadow: 3px 2px 8px gray;
+}
+
+.button1 a {
+    position: absolute;
+    right: 58%;
+    padding: 20px 180px;      
+}
+
+.button2 a {
+    position: absolute;
+    padding: 20px 180px;
+    right: 4%;
+}
+
+.td7{
+    margin: 80px 20px;
+    background-color: #EEEEEE;
+}
+.td7A{
+    float: left;
+    width: 50%;
+}
+.td7B{
+    float: left;
+    width: 50%;
+}
+
+.td8 img{
+  width: 14.2%;
+  float: left;
+}
+.td9{
+    display: flex;
+}
+.td9 img{
+ width: 20%;
+}
+.td10{
+
+}
+.td11{
+    width: 15%;
+}
