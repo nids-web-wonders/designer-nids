@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+    <title>Jquery-assignment</title>
+    <style>
+       .header {
+    background-color: rgba(0, 0, 0, 0.744);
+    color: whitesmoke;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#Q2-b {
+    display: none;
+}
+
+.display_block {
+    display: block !important;
+}
+
+.animation {
+    background: #98bf21;
+    width: 100px;
+    position: absolute;
+}
+
+/* --------------- q3 ans ---------------- */
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+.container {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+
+}
+
+.slide-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    display: block;
+    background-color:darksalmon;
+}
+
+.two {
+    background-color: lightyellow;
+}
+
+.three {
+    background-color: darkgray;
+}
+
+.four {
+    background-color: blueviolet;
+}
+
+.five {
+    background-color: lightpink;
+}
+
+.nav {
+    display: grid;
+    width: 250px;
+    height: 50px;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, 0);
+}
+
+.nav li {
+    list-style: none;
+    z-index: 5;
+}
+
+.nav li {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    display: relative;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    justify-self: center;
+    transform: scale(0.67);
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.27);
+    transition: all 0.2s;
+}
+
+.nav li:hover {
+    transform: scale(0.85);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.34);
+    transition: all 0.2s;
+}
+
+.arrow {
+    display: flex;
+    height: auto;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.prev {
+    top: 50%;
+    left: 0;
+}
+
+.next {
+    top: 50%;
+    right: 0;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 70px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #FFF;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: "liga";
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.27);
+    transition: all 0.12s;
+}
+
+.arrow:hover>.material-icons {
+    font-size: 90px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.34);
+    transition: all 0.15s;
+}
+
+li.selected {
+    transform: scale(1);
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.34);
+    transition: all 0.2s;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <h1>
+                Module (JQuery Basic, Effects & Advanced) – 5
+            </h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="Q1">
+            <h3>
+                (Q1) What is jQuery?
+            </h3>
+            <blockquote>
+              <p>
+                jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+              </p>
+            </blockquote>
+        </div>
+
+        <div class="Q2-a">
+            <h3>
+                (Q2-a) How to Apply CSS Using JQuery.
+
+            </h3>
+            <blockquote>
+                <button id="addcss">Add Css Using JQuery</button>
+                <ul>
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Jquery</li>
+                </ul>
+            </blockquote>
+        </div>
+        <div class="Q2-b">
+            <h3>
+                (Q2-b)How to Add Class and Remove Class in Jquery .
+            </h3>
+            <blockquote>
+                <button id="class-add">Add </button>
+                <button id="class-remove">Remove</button>
+                <ul id="Q2-b">
+                    <li>HTML</li>
+                    <li>Css</li>
+                    <li>Jquery</li>
+                </ul>
+            </blockquote>
+        </div>
+
+        <div class="Q2-c">
+            <h3>
+                (Q2-c) JQuery Animation?
+            </h3>
+
+            <blockquote>
+                <button id="animation">Add </button>
+                <p class="animation">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quidem.
+                </p>
+            </blockquote>
+        </div>
+
+        <div class="Q3">
+            <h3>
+                (Q3) Implement JquerySlider
+            </h3>
+            <p class="slider">
+
+            <div class="container">
+                <div class="slide-wrapper">
+                    <div class="slide one">
+
+                    </div>
+                    <div class="slide two">
+
+                    </div>
+                    <div class="slide three">
+
+                    </div>
+                    <div class="slide four">
+
+                    </div>
+                    <div class="slide five">
+
+                    </div>
+                </div>
+                <ul class="nav">
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="arrow prev">
+                    <i class="material-icons">add</i>
+                </div>
+                <div class="arrow next">
+                    <i class="material-icons">add</i>
+                </div>
+            </div>
+            </p>
+        </div>
+        </Main>
+
+        <script>
+          //  (q2-a) ans class add aND REMOVE USE JQUERY
+
+$("#addcss").click(function () {
+    $(" ul li ").css("border", "2px solid red")
+
+    $("li").css("display", "inline");
+});
+
+//  (q2-b) ans class add aND REMOVE USE JQUERY
+
+$("#class-add").click(function () {
+    $(" #Q2-b ").addClass("display_block")
+});
+$("#class-remove").click(function () {
+    $(" #Q2-b ").removeClass("display_block")
+});
+
+//  (q2-c) ans class add aND REMOVE USE JQUERY
+
+$(document).ready(function () {
+    $("#animation").click(function () {
+        $("p").animate({ left: '250px' });
+    });
+});
+
+
+// ---------(q3) ans slider change -------------
+
+$(document).ready(function () {
+
+    var currentIndex = 0,
+        navItems = $('.nav li');
+
+    function setSlide(index) {
+        navItems.removeClass('selected');
+        navItems.eq(index).addClass('selected');
+        $('.slide').css('display', 'none');
+        $('.slide').eq(index).css('display', 'block');
+    }
+
+    $('.nav li').click(function () {
+        var index = $('.nav li').index($(this));
+        currentIndex = index;
+        setSlide(currentIndex);
+    });
+
+    function next() {
+        if (currentIndex < (navItems.length - 1)) {
+            currentIndex++;
+            setSlide(currentIndex);
+        }
+    }
+
+    $('.next').click(function () {
+        next();
+    });
+
+    function prev() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            setSlide(currentIndex);
+        }
+    }
+
+    $('.prev').click(function () {
+        prev();
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.keyCode == 39) {
+            next();
+        } else if (event.keyCode == 37) {
+            prev();
+        }
+    }, true);
+
+    function slide() {
+        if (currentIndex < (navItems.length - 1)) {
+            currentIndex++;
+            setSlide(currentIndex);
+        } else {
+            currentIndex = 0;
+            setSlide(currentIndex);
+        }
+    }
+
+    var interval = setInterval(slide, 1000);
+
+});
+        </script>
+</body>
+
+</html>
